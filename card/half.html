@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .half{
+            width: 20em;
+            height: 30em;
+            border-radius: 1em;
+        }
+        .image{
+            height: calc(100%/2);
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border: 1px solid black;
+            border-radius: 1em;
+        }
+        div{
+            border: solid black 1px;
+        }
+        .booking_detail{
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-content: space-evenly;
+           
+        }
+        .details{
+          height: 7em;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          text-align: center;
+        }
+        .facility{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        }
+        .price{
+
+            height: 5em;
+            display: flex;
+            /* align-content: space-between; */
+            align-items: center;
+            align-content: space-between;
+            flex-direction: column;
+            justify-content: space-evenly;
+            /* justify-items: stretch; */
+        }
+
+        .booking{
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: auto;
+        }
+
+        /* half */
+    </style>
+</head>
+<body>
+    <div class="half">
+        <div class="image">
+            <!-- image -->
+        </div>
+        <div class="details">
+            <!-- name,date -->
+            <div class="name_date">
+                <h2>Name</h2>
+                <p>date</p>
+            </div>
+            <div class="facility " style="background-color: gray; border: red solid 2px;">
+                <!-- facility icons -->
+                <p>icon1</p>
+                <p>icon 2</p>
+                <p>icon 3</p>
+            </div>
+        </div>
+        <div class="booking_detail">
+            <div class="price">
+                <div>
+                <p class="crossed_price" style="text-decoration: line-through;">25</p>
+                </div>
+                <div >
+                    <p class="actual_price" style="text-align: center;">45</p>
+                    <p class="per_person">per person </p>
+                </div>
+            </div>
+            <div class="booking">
+                <div>
+                    <a href="">cart icon</a>
+                </div>
+                <div>
+                    <button class="book">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

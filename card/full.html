@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .full{
+            width: 45em;
+            height: 14em;
+            border: black 1px solid;
+            margin: auto;
+            border-top-left-radius: 2em;
+            border-bottom-left-radius: 2em;
+            display: flex;
+            flex-direction: row;
+        }
+        .image{
+            height: 14em;
+            /* width: 14em; */
+            background-color: rgb(211, 200, 200);
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 2em;
+            border-bottom-left-radius: 2em;
+            flex:1;
+        }
+        div{
+            border: solid black 1px;
+        }
+        .booking_detail{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .details{
+            flex:2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .facility{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+        }
+        .price{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-evenly;
+        }
+        .book{
+            margin-bottom: 1em;
+        }
+        .booking{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        /* half */
+    </style>
+</head>
+<body>
+    <div class="complete">
+
+    </div>
+    <hr>
+    <div class="full" >
+
+        <div class="image">
+            <!-- image -->
+        </div>
+        <div class="details">
+            <!-- name,date -->
+            <div class="name_date">
+                <h2>Name</h2>
+                <p>date</p>
+            </div>
+            <div class="facility " style="background-color: gray; border: red solid 2px;">
+                <!-- facility icons -->
+                <p>icon1</p>
+                <p>icon 2</p>
+                <p>icon 3</p>
+            </div>
+        </div>
+        <div class="booking_detail">
+            <div class="price">
+                <div>
+                    <!-- crossed price -->
+                
+                <p class="crossed_price" style="text-decoration: line-through;">
+                        <!-- actual price -->
+                <!-- rupees sign -->
+                25
+                </p>
+                </div>
+                
+                <div>
+                    <p class="actual_price" style="text-align: center;">
+                        45</p>
+                <!-- per person -->
+                <!-- rupees sign -->
+
+                <p class="per_person">
+                    per person
+                </p>
+                </div>
+                
+            </div>
+            <div class="booking">
+                <div>
+                    <a href="">
+                        <!-- add to cart icon -->cart icon
+                    </a>
+                    <!-- add to cart -->
+                </div>
+                <div>
+                    <button class="book">Book</button>
+                    <!-- book event -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="half">
+        <div class="image">
+            <!-- image -->
+        </div>
+        <div class="details">
+            <!-- name,date -->
+            <div class="name_date">
+                <h2>Name</h2>
+                <p>date</p>
+            </div>
+            <div class="facility " style="background-color: gray; border: red solid 2px;">
+                <!-- facility icons -->
+                <p>icon1</p>
+                <p>icon 2</p>
+                <p>icon 3</p>
+            </div>
+        </div>
+        <div class="booking_detail">
+            <div class="price">
+                <div>
+                    <!-- crossed price -->
+                
+                <p class="crossed_price" style="text-decoration: line-through;">
+                        <!-- actual price -->
+                <!-- rupees sign -->
+                25
+                </p>
+                </div>
+                
+                <div>
+                    <p class="actual_price" style="text-align: center;">
+                        45</p>
+                <!-- per person -->
+                <!-- rupees sign -->
+
+                <p class="per_person">
+                    per person
+                </p>
+                </div>
+                
+            </div>
+            <div class="booking">
+                <div>
+                    <a href="">
+                        <!-- add to cart icon -->cart icon
+                    </a>
+                    <!-- add to cart -->
+                </div>
+                <div>
+                    <button class="book">Book</button>
+                    <!-- book event -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="child"></div>
+    <hr>
+</body>
+</html>
