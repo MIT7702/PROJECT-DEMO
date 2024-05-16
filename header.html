@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <script src="JavaScript/header.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -47,11 +48,111 @@
           <button class="user-button">
           <img class="user-icon" src="icons/user-regular.svg">
           </button>
-          <button class="user-button">
+          <button class="bars-button" >
           <img class="bars" src="icons/bars-solid.svg" style="height: 24px;">
          </button>
         </div>
       </header>
+      <!-- <div class="box"> -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav> -->
+          <nav class="sidebar box">
+            <div class="logo_items flex">
+              <img src="icons/xmark-solid.svg" alt="" class="cancel">
+            </div>
+      
+            <div class="menu_container">
+              <div class="menu_items">
+                <ul class="menu_item">
+                  <div class="menu_title flex">
+                    <span class="title">Dashboard</span>
+                    <span class="line"></span>
+                  </div>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-home-alt"></i>
+                      <span>Overview</span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-grid-alt"></i>
+                      <span>All Projects</span>
+                    </a>
+                  </li>
+                </ul>
+      
+                <ul class="menu_item">
+                  <div class="menu_title flex">
+                    <span class="title">Editor</span>
+                    <span class="line"></span>
+                  </div>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bxs-magic-wand"></i>
+                      <span>Magic Build</span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-folder"></i>
+                      <span>New Projects</span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-cloud-upload"></i>
+                      <span>Upload New</span>
+                    </a>
+                  </li>
+                </ul>
+      
+                <ul class="menu_item">
+                  <div class="menu_title flex">
+                    <span class="title">Setting</span>
+                    <span class="line"></span>
+                  </div>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-flag"></i>
+                      <span>Notice Board</span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-award"></i>
+                      <span>Award</span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link flex">
+                      <i class="bx bx-cog"></i>
+                      <span>Setting</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="sidebar_profile flex">
+                <span class="nav_image">
+                  <img src="images/profile.jpg" alt="logo_img" />
+                </span>
+                <div class="data_text">
+                  <span class="name">David Oliva</span>
+                  <span class="email">david@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    <!-- </div> -->
     <div class="main"></div>
 </body>
 </html>

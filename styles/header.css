@@ -110,7 +110,7 @@ margin-left: 1.5em;
   height: 25px;
 }
 
-.instagram-button,.user-button {
+.instagram-button,.user-button,.bars-button {
   height: 40px;
   width: 40px;
   border-radius: 20px;
@@ -139,7 +139,7 @@ margin-left: 1.5em;
   height: 24px;
 }
 
-.cart-icon {
+.cart-icon,.cancel {
   height: 24px;
 }
 
@@ -164,4 +164,201 @@ margin-left: 1.5em;
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
+}
+.box{
+  width: fit-content;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  opacity: 0;
+  right: -500px;
+  pointer-events: none;
+  transition: 0.3s;
+
+  
+}
+.active_box{
+  opacity: 1;
+ right: 0;
+  pointer-events: fill;
+ 
+}
+
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #eef5fe;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.nav_image {
+  display: flex;
+  min-width: 55px;
+  justify-content: center;
+}
+.nav_image img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 270px;
+  background: #fff;
+  padding: 15px 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+/* .sidebar.close {
+  width: 0;
+  left: -100%;
+} */
+.logo_items {
+  gap: 8px;
+}
+.logo_name {
+  font-size: 22px;
+  color: #333;
+  font-weight: 500px;
+  transition: all 0.3s ease;
+}
+/* .sidebar.close .logo_name,
+.sidebar.close #lock-icon,
+.sidebar.close #sidebar-close {
+  opacity: 1;
+} */
+
+
+#sidebar-close {
+  padding: 10px;
+  color: #4070f4;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: -4px;
+  transition: all 0.3s ease;
+  display: inline;
+  
+}
+#sidebar-close {
+  opacity: 1;
+  display: block;
+  color: #333;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  overflow-y: auto;
+  height: calc(100% - 82px);
+}
+.menu_container::-webkit-scrollbar {
+  display: none;
+}
+.menu_title {
+  position: relative;
+  height: 50px;
+  width: 55px;
+}
+.menu_title .title {
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.menu_title .line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 20px;
+  border-radius: 25px;
+  background: #aaa;
+  transition: all 0.3s ease;
+}
+.menu_title .line {
+  opacity: 0;
+}
+.sidebar.close .line {
+  opacity: 1;
+}
+.item {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #707070;
+}
+.link:hover {
+  color: #fff;
+  background-color: #4070f4;
+}
+.link span {
+  white-space: nowrap;
+}
+.link i {
+  height: 50px;
+  min-width: 55px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.sidebar_profile {
+  padding-top: 15px;
+  margin-top: 15px;
+  gap: 15px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar_profile .name {
+  font-size: 18px;
+  color: #333;
+}
+.sidebar_profile .email {
+  font-size: 15px;
+  color: #333;
+}
+
+
+
+#sidebar-open {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 20px;
+  display: block;
+}
+
+#sidebar-close {
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  #sidebar-close {
+    display: block;
+  }
+}active #sidebar-close {
+  opacity: 1;
+  pointer-events: fill;
 }
